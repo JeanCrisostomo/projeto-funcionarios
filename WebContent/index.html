@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cadastro de Projeto no Projester</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="js/WsClient.js"></script>
+    <script src="js/crud.js"></script>
+  </head>
+
+  <body onload="fnRead()">
+    <table id="tableData">
+      <tr>
+        <td>Número de funcionários</td>
+        <td>Nome do Projeto</td>
+        <td>Gerente do Projeto</td>
+      	<td>Data de início do Projeto</td>
+      	<td>Data de término do Projeto</td>
+      </tr>
+    </table>
+
+    <input type="number" class="form-control" id="numFuncionarios" placeholder="Número de funcionários"  />
+    <input type="text" class="form-control" id="nome"  placeholder="Nome do Projeto"/>
+    <input type="text" class="form-control" id="gerente" placeholder="Gerente do Projeto" />
+    <input type="date" class="form-control" id="dataInicial" placeholder="Data de início do Projeto" />
+    <input type="date" class="form-control" id="dataFinal" placeholder="Data de término do Projeto" />
+    <button class="btn btn-primary" onclick="fnCreate()">Cadastrar</button>
+  </body>
+</html>
